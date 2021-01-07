@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+:root {
+  
+  /* Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  
+  /* Neutral Colors */
+    
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  background-color: var(--white);
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: left top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  padding: 20% 4%;
+}
+
+.wrapper-header {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.wrapper-header h1 {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  line-height: 1em;
+  padding: 5%;
+}
+
+.wrapper-header p {
+  color :var(--dark-grayish-magenta);
+  font-weight: 500;
+  line-height: 1.5em;
+  padding: 1%;
+}
+
+.wrapper-rating {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.rating-box {
+  width: 100%;
+  background-color: var(--light-grayish-magenta);
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.rating-box p {
+  padding-bottom: 5%;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+.rating-star {
+  padding: 2%;
+}
+
+.rating-star img {
+  padding: 1%;
+}
+
+.testimonial-box {
+  border-radius: 10px;
+  background-color: var(--very-dark-magenta);
+  margin-bottom: 5%;
+  padding: 12%;
+  text-align: left;
+}
+
+.testimonial-box p {
+  color: var(--light-grayish-magenta);
+  line-height: 1.5em;
+  font-size: 13px;
+  margin-top: 10%;
+}
+
+.customer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+
+.customer img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.customer-info {
+  margin-right: 30%;
+  margin-top: 10px;
+}
+.name {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.verified {
+  color: var(--soft-pink);
+  font-weight: 400;
+  margin-top:5%;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-info {
+  margin-right: 65%;
+  margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: black;
+  }
+}
