@@ -214,7 +214,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top: 7%;
+    margin-top: 2%;
   }
   
   .testimonial-box {
