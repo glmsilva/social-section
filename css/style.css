@@ -112,7 +112,7 @@ body {
 }
 
 .customer-info {
-  margin-right: 30%;
+  margin-right: 80px;
   margin-top: 10px;
 }
 .name {
@@ -135,6 +135,125 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background: black;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, bottom;
+    background-repeat: no-repeat, no-repeat;
   }
+  
+  .container {
+    padding: 10% 10%;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
+    
+  }
+  
+  .wrapper-header {
+    width: 50%;
+  }
+  
+  .wrapper-header h1 {
+    font-size: 3rem;
+    padding: 0;
+    width: 75%;
+  }
+  
+  .wrapper-header p {
+    padding: 5% 5% 5% 0;
+    width: 80%;
+  }
+  
+  .wrapper-rating {
+    width: 50%;
+    padding: 0;
+    
+  }
+  
+  .rating-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    padding: 4% 5% 4% 2%;
+    
+  }
+  
+  .rating-star {
+    padding: 0;
+  }
+
+  .rating-star img {
+    padding:0;
+    width: 14px;
+  }
+  
+  .rating-box p {
+    padding: 0;
+    margin-left: 20px;
+    font-size: 0.85em;
+  }
+  
+  .wrapper-rating div:nth-child(3) {
+    margin-left: 27%;
+  }
+  .wrapper-rating div:nth-child(2) {
+    margin-left: 17%;
+  }
+  .wrapper-rating div:nth-child(1) {
+    margin-left: 7%;
+  }
+  
+  /* Bottom */
+  
+  .testimonials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 7%;
+  }
+  
+  .testimonial-box {
+    width: 32%;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .testimonial-box p {
+    padding: 0 8% 10% 8%;
+  }
+  
+  .customer {
+    margin: 0;
+    padding: 10% 8% 0 8%;
+    align-items: center;
+  }
+  
+  .customer-info {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .customer img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+
+.b3 {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.b2 {
+  margin-bottom: 0;
+  margin-top: 25px;
+  }
+  
 }
